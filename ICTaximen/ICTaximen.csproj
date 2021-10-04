@@ -93,11 +93,23 @@
     <Compile Include="userControls\ucAgent.Designer.cs">
       <DependentUpon>ucAgent.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControls\ucAjouterUtilisateurForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucAjouterUtilisateurForm.Designer.cs">
+      <DependentUpon>ucAjouterUtilisateurForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="userControls\ucAttribution.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="userControls\ucAttribution.Designer.cs">
       <DependentUpon>ucAttribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\ucAttributionAdresseForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucAttributionAdresseForm.Designer.cs">
+      <DependentUpon>ucAttributionAdresseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="userControls\ucContactus.cs">
       <SubType>UserControl</SubType>
@@ -146,6 +158,12 @@
     </Compile>
     <Compile Include="userControls\ucTaximanform.Designer.cs">
       <DependentUpon>ucTaximanform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\ucUtilisateur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucUtilisateur.Designer.cs">
+      <DependentUpon>ucUtilisateur.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Frms\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
