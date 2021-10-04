@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ICTaximen.userControls
 {
-    public partial class ucAttribution : UserControl
+    public partial class ucAffectationConduit : UserControl
     {
-        public ucAttribution()
+        public ucAffectationConduit()
         {
             InitializeComponent();
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

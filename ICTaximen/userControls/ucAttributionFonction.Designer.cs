@@ -1,6 +1,6 @@
 ﻿namespace ICTaximen.userControls
 {
-    partial class ucAttributionAdresseForm
+    partial class ucAttributionFonction
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,23 +29,21 @@
         private void InitializeComponent()
         {
             this.pnlContainner = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.pnlChoose = new System.Windows.Forms.Panel();
-            this.lblChooseAdresse = new System.Windows.Forms.Label();
-            this.cmbAddresse = new System.Windows.Forms.ComboBox();
-            this.pnlOption = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblChoosePersonne = new System.Windows.Forms.Label();
             this.cmbPersonne = new System.Windows.Forms.ComboBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.pnlChoose = new System.Windows.Forms.Panel();
+            this.lblChooseAdresse = new System.Windows.Forms.Label();
+            this.cmbFonction = new System.Windows.Forms.ComboBox();
+            this.pnlOption = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbRef = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.rdbFeminin = new System.Windows.Forms.RadioButton();
-            this.rdbMasculin = new System.Windows.Forms.RadioButton();
             this.pnlContainner.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnlChoose.SuspendLayout();
             this.pnlOption.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRef)).BeginInit();
             this.SuspendLayout();
@@ -63,77 +61,12 @@
             this.pnlContainner.Location = new System.Drawing.Point(4, 4);
             this.pnlContainner.Name = "pnlContainner";
             this.pnlContainner.Size = new System.Drawing.Size(754, 510);
-            this.pnlContainner.TabIndex = 4;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblTitle.Location = new System.Drawing.Point(284, 32);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(172, 20);
-            this.lblTitle.TabIndex = 8;
-            this.lblTitle.Text = "Attribution addresse";
-            // 
-            // pnlChoose
-            // 
-            this.pnlChoose.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlChoose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.pnlChoose.Controls.Add(this.lblChooseAdresse);
-            this.pnlChoose.Controls.Add(this.cmbAddresse);
-            this.pnlChoose.Controls.Add(this.pbRef);
-            this.pnlChoose.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlChoose.Location = new System.Drawing.Point(122, 177);
-            this.pnlChoose.Name = "pnlChoose";
-            this.pnlChoose.Size = new System.Drawing.Size(508, 77);
-            this.pnlChoose.TabIndex = 7;
-            // 
-            // lblChooseAdresse
-            // 
-            this.lblChooseAdresse.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblChooseAdresse.AutoSize = true;
-            this.lblChooseAdresse.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblChooseAdresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblChooseAdresse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblChooseAdresse.Location = new System.Drawing.Point(11, 8);
-            this.lblChooseAdresse.Name = "lblChooseAdresse";
-            this.lblChooseAdresse.Size = new System.Drawing.Size(191, 20);
-            this.lblChooseAdresse.TabIndex = 9;
-            this.lblChooseAdresse.Text = "Selectionner Addresse";
-            // 
-            // cmbAddresse
-            // 
-            this.cmbAddresse.AllowDrop = true;
-            this.cmbAddresse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.cmbAddresse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbAddresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.cmbAddresse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.cmbAddresse.FormattingEnabled = true;
-            this.cmbAddresse.Location = new System.Drawing.Point(43, 36);
-            this.cmbAddresse.Name = "cmbAddresse";
-            this.cmbAddresse.Size = new System.Drawing.Size(455, 32);
-            this.cmbAddresse.TabIndex = 1;
-            // 
-            // pnlOption
-            // 
-            this.pnlOption.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlOption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.pnlOption.Controls.Add(this.btnSave);
-            this.pnlOption.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlOption.Location = new System.Drawing.Point(292, 270);
-            this.pnlOption.Name = "pnlOption";
-            this.pnlOption.Size = new System.Drawing.Size(171, 101);
-            this.pnlOption.TabIndex = 6;
+            this.pnlContainner.TabIndex = 5;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panel1.Controls.Add(this.rdbFeminin);
-            this.panel1.Controls.Add(this.rdbMasculin);
             this.panel1.Controls.Add(this.lblChoosePersonne);
             this.panel1.Controls.Add(this.cmbPersonne);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -169,6 +102,70 @@
             this.cmbPersonne.Size = new System.Drawing.Size(455, 32);
             this.cmbPersonne.TabIndex = 1;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblTitle.Location = new System.Drawing.Point(284, 32);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(178, 20);
+            this.lblTitle.TabIndex = 8;
+            this.lblTitle.Text = "Attribution   Fonction";
+            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
+            // 
+            // pnlChoose
+            // 
+            this.pnlChoose.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlChoose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.pnlChoose.Controls.Add(this.lblChooseAdresse);
+            this.pnlChoose.Controls.Add(this.cmbFonction);
+            this.pnlChoose.Controls.Add(this.pbRef);
+            this.pnlChoose.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pnlChoose.Location = new System.Drawing.Point(122, 177);
+            this.pnlChoose.Name = "pnlChoose";
+            this.pnlChoose.Size = new System.Drawing.Size(508, 77);
+            this.pnlChoose.TabIndex = 7;
+            // 
+            // lblChooseAdresse
+            // 
+            this.lblChooseAdresse.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChooseAdresse.AutoSize = true;
+            this.lblChooseAdresse.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblChooseAdresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblChooseAdresse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblChooseAdresse.Location = new System.Drawing.Point(11, 8);
+            this.lblChooseAdresse.Name = "lblChooseAdresse";
+            this.lblChooseAdresse.Size = new System.Drawing.Size(185, 20);
+            this.lblChooseAdresse.TabIndex = 9;
+            this.lblChooseAdresse.Text = "Selectionner Fonction";
+            // 
+            // cmbFonction
+            // 
+            this.cmbFonction.AllowDrop = true;
+            this.cmbFonction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.cmbFonction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbFonction.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.cmbFonction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.cmbFonction.FormattingEnabled = true;
+            this.cmbFonction.Location = new System.Drawing.Point(43, 36);
+            this.cmbFonction.Name = "cmbFonction";
+            this.cmbFonction.Size = new System.Drawing.Size(455, 32);
+            this.cmbFonction.TabIndex = 1;
+            // 
+            // pnlOption
+            // 
+            this.pnlOption.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlOption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.pnlOption.Controls.Add(this.btnSave);
+            this.pnlOption.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pnlOption.Location = new System.Drawing.Point(292, 270);
+            this.pnlOption.Name = "pnlOption";
+            this.pnlOption.Size = new System.Drawing.Size(171, 101);
+            this.pnlOption.TabIndex = 6;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ICTaximen.Properties.Resources.Name1;
@@ -181,7 +178,7 @@
             // 
             // pbRef
             // 
-            this.pbRef.Image = global::ICTaximen.Properties.Resources.Address_16;
+            this.pbRef.Image = global::ICTaximen.Properties.Resources.fonction_16;
             this.pbRef.Location = new System.Drawing.Point(13, 39);
             this.pbRef.Name = "pbRef";
             this.pbRef.Size = new System.Drawing.Size(24, 24);
@@ -206,44 +203,20 @@
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // rdbFeminin
-            // 
-            this.rdbFeminin.AutoSize = true;
-            this.rdbFeminin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.rdbFeminin.Location = new System.Drawing.Point(442, 8);
-            this.rdbFeminin.Name = "rdbFeminin";
-            this.rdbFeminin.Size = new System.Drawing.Size(55, 17);
-            this.rdbFeminin.TabIndex = 10;
-            this.rdbFeminin.TabStop = true;
-            this.rdbFeminin.Text = "Autres";
-            this.rdbFeminin.UseVisualStyleBackColor = true;
-            // 
-            // rdbMasculin
-            // 
-            this.rdbMasculin.AutoSize = true;
-            this.rdbMasculin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.rdbMasculin.Location = new System.Drawing.Point(362, 8);
-            this.rdbMasculin.Name = "rdbMasculin";
-            this.rdbMasculin.Size = new System.Drawing.Size(53, 17);
-            this.rdbMasculin.TabIndex = 11;
-            this.rdbMasculin.TabStop = true;
-            this.rdbMasculin.Text = "Agent";
-            this.rdbMasculin.UseVisualStyleBackColor = true;
-            // 
-            // ucAttributionAdresseForm
+            // ucAttributionFonction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlContainner);
-            this.Name = "ucAttributionAdresseForm";
+            this.Name = "ucAttributionFonction";
             this.Size = new System.Drawing.Size(762, 519);
             this.pnlContainner.ResumeLayout(false);
             this.pnlContainner.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.pnlChoose.ResumeLayout(false);
             this.pnlChoose.PerformLayout();
             this.pnlOption.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRef)).EndInit();
             this.ResumeLayout(false);
@@ -260,11 +233,9 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel pnlChoose;
         private System.Windows.Forms.Label lblChooseAdresse;
-        private System.Windows.Forms.ComboBox cmbAddresse;
+        private System.Windows.Forms.ComboBox cmbFonction;
         private System.Windows.Forms.PictureBox pbRef;
         private System.Windows.Forms.Panel pnlOption;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.RadioButton rdbFeminin;
-        private System.Windows.Forms.RadioButton rdbMasculin;
     }
 }

@@ -28,15 +28,16 @@ namespace ICTaximen.userControls
 
         private void btnVille_Click(object sender, EventArgs e)
         {
-            //MainControlClass.showControl(adad, pnlContainner);
             if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAddadresse"))
             {
                 ucAddadresse un = new ucAddadresse();
                 un.Dock = DockStyle.Fill;
                 frmHome.Instance.PnlContainer.Controls.Add(un);
                 un.AddresseTitle.Text = "Ville";
-                un.PnlChoose.Visible = false;
+                un.ChooseRef.Text = "Choisir Province";
+                un.PnlChoose.Visible = true;
                 un.PBLibelle.Image = Properties.Resources.ville_32;
+                un.PBRef.Image = Properties.Resources.Province_32;
             }
             frmHome.Instance.PnlContainer.Controls["ucAddadresse"].BringToFront();
             frmHome.Instance.BackButton.Visible = true;
@@ -92,6 +93,52 @@ namespace ICTaximen.userControls
 
             }
             frmHome.Instance.PnlContainer.Controls["ucAddadresse"].BringToFront();
+            frmHome.Instance.BackButton.Visible = true;
+        }
+
+        private void btnProvince_Click(object sender, EventArgs e)
+        {
+            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAddadresse"))
+            {
+                ucAddadresse un = new ucAddadresse();
+                un.Dock = DockStyle.Fill;
+                frmHome.Instance.PnlContainer.Controls.Add(un);
+                un.AddresseTitle.Text = "Province";
+                un.ChooseRef.Text = "Choisir Pays";
+                un.PnlChoose.Visible = true;
+                un.PBLibelle.Image = Properties.Resources.Province_32;
+                un.PBRef.Image = Properties.Resources.Pays_32;
+            }
+            frmHome.Instance.PnlContainer.Controls["ucAddadresse"].BringToFront();
+            frmHome.Instance.BackButton.Visible = true;
+        }
+
+        private void btnPays_Click(object sender, EventArgs e)
+        {
+            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAddadresse"))
+            {
+                ucAddadresse un = new ucAddadresse();
+                un.Dock = DockStyle.Fill;
+                frmHome.Instance.PnlContainer.Controls.Add(un);
+                un.AddresseTitle.Text = "Pays";
+                un.PnlChoose.Visible = false;
+                un.PBLibelle.Image = Properties.Resources.Pays_32;
+               // un.PBRef.Image = Properties.Resources.Pays_32;
+            }
+            frmHome.Instance.PnlContainer.Controls["ucAddadresse"].BringToFront();
+            frmHome.Instance.BackButton.Visible = true;
+        }
+
+        private void btnAttribueradresse_Click(object sender, EventArgs e)
+        {
+            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAttributionAdresseForm"))
+            {
+                ucAttributionAdresseForm un = new ucAttributionAdresseForm();
+                un.Dock = DockStyle.Fill;
+                frmHome.Instance.PnlContainer.Controls.Add(un);
+              
+            }
+            frmHome.Instance.PnlContainer.Controls["ucAttributionAdresseForm"].BringToFront();
             frmHome.Instance.BackButton.Visible = true;
         }
     }

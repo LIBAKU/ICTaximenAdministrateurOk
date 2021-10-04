@@ -30,12 +30,14 @@
         {
             this.pnlContainner = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnPays = new System.Windows.Forms.Button();
+            this.btnProvince = new System.Windows.Forms.Button();
             this.btnAvenue = new System.Windows.Forms.Button();
             this.btnCommune = new System.Windows.Forms.Button();
             this.btnAttribueradresse = new System.Windows.Forms.Button();
             this.btnQuartier = new System.Windows.Forms.Button();
             this.btnVille = new System.Windows.Forms.Button();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.pnlContainner.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +58,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.btnPays);
+            this.panel1.Controls.Add(this.btnProvince);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Controls.Add(this.btnAvenue);
             this.panel1.Controls.Add(this.btnCommune);
@@ -67,6 +71,55 @@
             this.panel1.Size = new System.Drawing.Size(754, 510);
             this.panel1.TabIndex = 2;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblTitle.Location = new System.Drawing.Point(341, 36);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(82, 20);
+            this.lblTitle.TabIndex = 9;
+            this.lblTitle.Text = "Text Title";
+            this.lblTitle.Visible = false;
+            // 
+            // btnPays
+            // 
+            this.btnPays.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPays.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.btnPays.FlatAppearance.BorderSize = 0;
+            this.btnPays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPays.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPays.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnPays.Image = global::ICTaximen.Properties.Resources.Pays_32;
+            this.btnPays.Location = new System.Drawing.Point(467, 274);
+            this.btnPays.Name = "btnPays";
+            this.btnPays.Size = new System.Drawing.Size(162, 141);
+            this.btnPays.TabIndex = 11;
+            this.btnPays.Text = "   Pays";
+            this.btnPays.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPays.UseVisualStyleBackColor = false;
+            this.btnPays.Click += new System.EventHandler(this.btnPays_Click);
+            // 
+            // btnProvince
+            // 
+            this.btnProvince.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnProvince.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.btnProvince.FlatAppearance.BorderSize = 0;
+            this.btnProvince.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProvince.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProvince.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnProvince.Image = global::ICTaximen.Properties.Resources.Province_32;
+            this.btnProvince.Location = new System.Drawing.Point(467, 117);
+            this.btnProvince.Name = "btnProvince";
+            this.btnProvince.Size = new System.Drawing.Size(162, 141);
+            this.btnProvince.TabIndex = 10;
+            this.btnProvince.Text = "  Province";
+            this.btnProvince.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProvince.UseVisualStyleBackColor = false;
+            this.btnProvince.Click += new System.EventHandler(this.btnProvince_Click);
+            // 
             // btnAvenue
             // 
             this.btnAvenue.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -76,7 +129,7 @@
             this.btnAvenue.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAvenue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnAvenue.Image = global::ICTaximen.Properties.Resources.avenue_32;
-            this.btnAvenue.Location = new System.Drawing.Point(393, 190);
+            this.btnAvenue.Location = new System.Drawing.Point(293, 220);
             this.btnAvenue.Name = "btnAvenue";
             this.btnAvenue.Size = new System.Drawing.Size(162, 90);
             this.btnAvenue.TabIndex = 2;
@@ -94,7 +147,7 @@
             this.btnCommune.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCommune.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnCommune.Image = global::ICTaximen.Properties.Resources.commune_32;
-            this.btnCommune.Location = new System.Drawing.Point(393, 91);
+            this.btnCommune.Location = new System.Drawing.Point(293, 117);
             this.btnCommune.Name = "btnCommune";
             this.btnCommune.Size = new System.Drawing.Size(162, 90);
             this.btnCommune.TabIndex = 2;
@@ -112,13 +165,14 @@
             this.btnAttribueradresse.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAttribueradresse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnAttribueradresse.Image = global::ICTaximen.Properties.Resources.Address_48;
-            this.btnAttribueradresse.Location = new System.Drawing.Point(223, 288);
+            this.btnAttribueradresse.Location = new System.Drawing.Point(117, 325);
             this.btnAttribueradresse.Name = "btnAttribueradresse";
-            this.btnAttribueradresse.Size = new System.Drawing.Size(332, 109);
+            this.btnAttribueradresse.Size = new System.Drawing.Size(338, 90);
             this.btnAttribueradresse.TabIndex = 2;
             this.btnAttribueradresse.Text = "    Atribuer Adresse";
             this.btnAttribueradresse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAttribueradresse.UseVisualStyleBackColor = false;
+            this.btnAttribueradresse.Click += new System.EventHandler(this.btnAttribueradresse_Click);
             // 
             // btnQuartier
             // 
@@ -129,7 +183,7 @@
             this.btnQuartier.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuartier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnQuartier.Image = global::ICTaximen.Properties.Resources.quartier_32;
-            this.btnQuartier.Location = new System.Drawing.Point(223, 190);
+            this.btnQuartier.Location = new System.Drawing.Point(117, 220);
             this.btnQuartier.Name = "btnQuartier";
             this.btnQuartier.Size = new System.Drawing.Size(162, 90);
             this.btnQuartier.TabIndex = 2;
@@ -147,7 +201,7 @@
             this.btnVille.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVille.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnVille.Image = global::ICTaximen.Properties.Resources.ville_32;
-            this.btnVille.Location = new System.Drawing.Point(223, 91);
+            this.btnVille.Location = new System.Drawing.Point(117, 117);
             this.btnVille.Name = "btnVille";
             this.btnVille.Size = new System.Drawing.Size(162, 90);
             this.btnVille.TabIndex = 2;
@@ -155,19 +209,6 @@
             this.btnVille.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVille.UseVisualStyleBackColor = false;
             this.btnVille.Click += new System.EventHandler(this.btnVille_Click);
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblTitle.Location = new System.Drawing.Point(341, 36);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(82, 20);
-            this.lblTitle.TabIndex = 9;
-            this.lblTitle.Text = "Text Title";
-            this.lblTitle.Visible = false;
             // 
             // ucAdresse
             // 
@@ -193,5 +234,7 @@
         private System.Windows.Forms.Button btnAttribueradresse;
         private System.Windows.Forms.Button btnQuartier;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnPays;
+        private System.Windows.Forms.Button btnProvince;
     }
 }

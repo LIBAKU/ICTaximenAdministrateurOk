@@ -81,6 +81,12 @@
     <Compile Include="userControls\ucAdresse.Designer.cs">
       <DependentUpon>ucAdresse.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControls\ucAffectationConduit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucAffectationConduit.Designer.cs">
+      <DependentUpon>ucAffectationConduit.cs</DependentUpon>
+    </Compile>
     <Compile Include="userControls\ucAgeantform.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,11 +105,29 @@
     <Compile Include="userControls\ucAjouterUtilisateurForm.Designer.cs">
       <DependentUpon>ucAjouterUtilisateurForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="userControls\ucAttribution.cs">
+    <Compile Include="userControls\ucAssociation.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="userControls\ucAttribution.Designer.cs">
-      <DependentUpon>ucAttribution.cs</DependentUpon>
+    <Compile Include="userControls\ucAssociation.Designer.cs">
+      <DependentUpon>ucAssociation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\ucAttributionFonction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucAttributionFonction.Designer.cs">
+      <DependentUpon>ucAttributionFonction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\ucCategorieEngin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucCategorieEngin.Designer.cs">
+      <DependentUpon>ucCategorieEngin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\ucEnginForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucEnginForm.Designer.cs">
+      <DependentUpon>ucEnginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="userControls\ucAttributionAdresseForm.cs">
       <SubType>UserControl</SubType>
@@ -128,6 +152,18 @@
     </Compile>
     <Compile Include="userControls\ucEnregistrement.Designer.cs">
       <DependentUpon>ucEnregistrement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\ucFonctionForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucFonctionForm.Designer.cs">
+      <DependentUpon>ucFonctionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\ucParameters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucParameters.Designer.cs">
+      <DependentUpon>ucParameters.cs</DependentUpon>
     </Compile>
     <Compile Include="userControls\ucProprietaire.cs">
       <SubType>UserControl</SubType>
@@ -187,14 +223,32 @@
     <EmbeddedResource Include="userControls\ucAdresse.resx">
       <DependentUpon>ucAdresse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucAffectationConduit.resx">
+      <DependentUpon>ucAffectationConduit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucAgeantform.resx">
       <DependentUpon>ucAgeantform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucAgent.resx">
       <DependentUpon>ucAgent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userControls\ucAttribution.resx">
-      <DependentUpon>ucAttribution.cs</DependentUpon>
+    <EmbeddedResource Include="userControls\ucAjouterUtilisateurForm.resx">
+      <DependentUpon>ucAjouterUtilisateurForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucAssociation.resx">
+      <DependentUpon>ucAssociation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucAttributionFonction.resx">
+      <DependentUpon>ucAttributionFonction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucCategorieEngin.resx">
+      <DependentUpon>ucCategorieEngin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucEnginForm.resx">
+      <DependentUpon>ucEnginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucAttributionAdresseForm.resx">
+      <DependentUpon>ucAttributionAdresseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucContactus.resx">
       <DependentUpon>ucContactus.cs</DependentUpon>
@@ -204,6 +258,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucEnregistrement.resx">
       <DependentUpon>ucEnregistrement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucFonctionForm.resx">
+      <DependentUpon>ucFonctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucParameters.resx">
+      <DependentUpon>ucParameters.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucProprietaire.resx">
       <DependentUpon>ucProprietaire.cs</DependentUpon>
@@ -219,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucTaximanform.resx">
       <DependentUpon>ucTaximanform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucUtilisateur.resx">
+      <DependentUpon>ucUtilisateur.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -359,6 +422,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\20210201_163439.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Province_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pays_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fonction_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bike_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fonction_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,23 +11,23 @@ using ICTaximen.Frms;
 
 namespace ICTaximen.userControls
 {
-    public partial class ucUtilisateur : UserControl
+    public partial class ucEnginForm : UserControl
     {
-        public ucUtilisateur()
+        public ucEnginForm()
         {
             InitializeComponent();
         }
 
-        private void btnNew_Click(object sender, EventArgs e)
+        private void btnAffecter_Click(object sender, EventArgs e)
         {
-            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAjouterUtilisateurForm"))
+            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAffectationConduit"))
             {
-                ucAjouterUtilisateurForm un = new ucAjouterUtilisateurForm();
+                ucAffectationConduit un = new ucAffectationConduit();
                 un.Dock = DockStyle.Fill;
                 frmHome.Instance.PnlContainer.Controls.Add(un);
+                frmHome.Instance.BackButton.Visible = true;
             }
-            frmHome.Instance.PnlContainer.Controls["ucAjouterUtilisateurForm"].BringToFront();
-            frmHome.Instance.BackButton.Visible = true;
+            frmHome.Instance.PnlContainer.Controls["ucAffectationConduit"].BringToFront();
         }
     }
 }
