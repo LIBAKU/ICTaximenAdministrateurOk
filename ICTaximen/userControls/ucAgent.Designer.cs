@@ -126,7 +126,7 @@
             this.btnNew.Text = "Nouveau";
             this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNew.UseVisualStyleBackColor = false;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click_1);
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // ucAgent
             // 

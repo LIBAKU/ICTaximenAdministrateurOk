@@ -32,10 +32,5 @@ namespace ICTaximen.userControls
             }
             frmHome.Instance.PnlContainer.Controls["ucAgeantform"].BringToFront();
         }
-
-        private void btnNew_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
