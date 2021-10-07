@@ -82,6 +82,7 @@ namespace ICTaximen.Frms
            
             btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
 
+            lblUname.Text = ALLProjetctdll.Classes.UserSession.GetInstance().UserName;
             //MainControlClass.showControl(dsb, pnlContainner);
         }
 
@@ -99,7 +100,8 @@ namespace ICTaximen.Frms
         private void btnAdresse_Click(object sender, EventArgs e)
         {
             // MainControlClass.showControl(add, pnlContainner);
-           
+
+            pnlContainner.Controls.Clear();
             
             addresse.Dock = DockStyle.Fill;
             pnlContainner.Controls.Add(addresse);

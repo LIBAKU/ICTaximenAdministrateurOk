@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.Collections.Specialized;
 using ICTaximen.Frms;
+using ALLProjetctdll.Classes;
 
 namespace ICTaximen
 {
@@ -56,23 +57,36 @@ namespace ICTaximen
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (chbRememberme.Checked == true)
-            {
-                Properties.Settings.Default.UserName = txtUname.Text;
-                Properties.Settings.Default.Password = txtPwd.Text;
-                Properties.Settings.Default.Save();
-            }
-             if (chbRememberme.Checked == false)
-            {
-                Properties.Settings.Default.UserName = "";
-                Properties.Settings.Default.Password = "";
-                Properties.Settings.Default.Save();
-            }
 
-            this.Hide();
-            frmHome form1 = new frmHome();
-            form1.Closed += (s, args) => this.Close();
-            form1.Show();
+            try
+            {
+                pubCon.testlog = ALLProjetctdll.Classes.pubCon.testlog = ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().loginTest(txtUname.Text, txtPwd.Text, "SP_Login","Username", "Userpassword","Nom");
+
+                if (pubCon.testlog == 1)
+                {
+                    if (chbRememberme.Checked == true)
+                    {
+                        Properties.Settings.Default.UserName = txtUname.Text;
+                        Properties.Settings.Default.Password = txtPwd.Text;
+                        Properties.Settings.Default.Save();
+                    }
+                    if (chbRememberme.Checked == false)
+                    {
+                        Properties.Settings.Default.UserName = "";
+                        Properties.Settings.Default.Password = "";
+                        Properties.Settings.Default.Save();
+                    }
+                    // new Form1(MysplashScreen).Show();
+                    this.Hide();
+                    frmHome form1 = new frmHome();
+                    form1.Closed += (s, args) => this.Close();
+                    form1.Show();
+                }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+
+
+                    
 
 
             //frmHome hm = new frmHome();            

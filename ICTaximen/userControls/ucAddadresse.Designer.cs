@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.pnlContainner = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.pnlChoose = new System.Windows.Forms.Panel();
+            this.lblChoose = new System.Windows.Forms.Label();
             this.cmbChoose = new System.Windows.Forms.ComboBox();
             this.pbRef = new System.Windows.Forms.PictureBox();
             this.pnlOption = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.pnlPwd = new System.Windows.Forms.Panel();
+            this.lblLib = new System.Windows.Forms.Label();
             this.txtlibelle = new System.Windows.Forms.TextBox();
             this.pbLibelle = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblChoose = new System.Windows.Forms.Label();
-            this.lblLib = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.pnlContainner.SuspendLayout();
             this.pnlChoose.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRef)).BeginInit();
@@ -64,10 +65,24 @@
             this.pnlContainner.TabIndex = 3;
             this.pnlContainner.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContainner_Paint);
             // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblTitle.Location = new System.Drawing.Point(328, 42);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(82, 20);
+            this.lblTitle.TabIndex = 8;
+            this.lblTitle.Text = "Text Title";
+            // 
             // pnlChoose
             // 
             this.pnlChoose.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlChoose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.pnlChoose.Controls.Add(this.lblId);
             this.pnlChoose.Controls.Add(this.lblChoose);
             this.pnlChoose.Controls.Add(this.cmbChoose);
             this.pnlChoose.Controls.Add(this.pbRef);
@@ -76,6 +91,19 @@
             this.pnlChoose.Name = "pnlChoose";
             this.pnlChoose.Size = new System.Drawing.Size(508, 77);
             this.pnlChoose.TabIndex = 7;
+            // 
+            // lblChoose
+            // 
+            this.lblChoose.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChoose.AutoSize = true;
+            this.lblChoose.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblChoose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblChoose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblChoose.Location = new System.Drawing.Point(11, 8);
+            this.lblChoose.Name = "lblChoose";
+            this.lblChoose.Size = new System.Drawing.Size(82, 20);
+            this.lblChoose.TabIndex = 9;
+            this.lblChoose.Text = "Text Title";
             // 
             // cmbChoose
             // 
@@ -89,6 +117,9 @@
             this.cmbChoose.Name = "cmbChoose";
             this.cmbChoose.Size = new System.Drawing.Size(455, 32);
             this.cmbChoose.TabIndex = 1;
+            this.cmbChoose.SelectedIndexChanged += new System.EventHandler(this.cmbChoose_SelectedIndexChanged);
+            this.cmbChoose.TabIndexChanged += new System.EventHandler(this.cmbChoose_TabIndexChanged);
+            this.cmbChoose.MouseHover += new System.EventHandler(this.cmbChoose_MouseHover);
             // 
             // pbRef
             // 
@@ -142,6 +173,19 @@
             this.pnlPwd.Size = new System.Drawing.Size(508, 77);
             this.pnlPwd.TabIndex = 4;
             // 
+            // lblLib
+            // 
+            this.lblLib.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblLib.AutoSize = true;
+            this.lblLib.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLib.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblLib.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblLib.Location = new System.Drawing.Point(11, 12);
+            this.lblLib.Name = "lblLib";
+            this.lblLib.Size = new System.Drawing.Size(61, 20);
+            this.lblLib.TabIndex = 10;
+            this.lblLib.Text = "Libelle";
+            // 
             // txtlibelle
             // 
             this.txtlibelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
@@ -164,44 +208,14 @@
             this.pbLibelle.TabIndex = 0;
             this.pbLibelle.TabStop = false;
             // 
-            // lblTitle
+            // lblId
             // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblTitle.Location = new System.Drawing.Point(328, 42);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(82, 20);
-            this.lblTitle.TabIndex = 8;
-            this.lblTitle.Text = "Text Title";
-            // 
-            // lblChoose
-            // 
-            this.lblChoose.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblChoose.AutoSize = true;
-            this.lblChoose.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblChoose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblChoose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblChoose.Location = new System.Drawing.Point(11, 8);
-            this.lblChoose.Name = "lblChoose";
-            this.lblChoose.Size = new System.Drawing.Size(82, 20);
-            this.lblChoose.TabIndex = 9;
-            this.lblChoose.Text = "Text Title";
-            // 
-            // lblLib
-            // 
-            this.lblLib.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblLib.AutoSize = true;
-            this.lblLib.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLib.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblLib.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblLib.Location = new System.Drawing.Point(11, 12);
-            this.lblLib.Name = "lblLib";
-            this.lblLib.Size = new System.Drawing.Size(61, 20);
-            this.lblLib.TabIndex = 10;
-            this.lblLib.Text = "Libelle";
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblId.Location = new System.Drawing.Point(485, 6);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(0, 22);
+            this.lblId.TabIndex = 10;
             // 
             // ucAddadresse
             // 
@@ -238,5 +252,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblChoose;
         private System.Windows.Forms.Label lblLib;
+        private System.Windows.Forms.Label lblId;
     }
 }

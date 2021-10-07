@@ -33,6 +33,133 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ALLProjetctdll">
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\ALLProjetctdll.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Charts.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.CodeParser.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Data.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.DataAccess.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.DataAccess.v15.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Office.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Pdf.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v15.2.Drawing, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.PivotGrid.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Printing.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Utils.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Utils.v15.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Xpo.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraBars.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraCharts.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraCharts.v15.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraEditors.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraGauges.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraGrid.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraLayout.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraNavBar.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraPivotGrid.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraPrinting.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraReports.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraReports.v15.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraTreeList.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +171,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
     <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
       <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
     </Reference>
@@ -53,7 +183,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\clcTitle.cs" />
+    <Compile Include="Classes\clsImabar.cs" />
     <Compile Include="Classes\clsPhoto.cs" />
+    <Compile Include="Classes\Constantes.cs" />
     <Compile Include="Classes\MainControlClass.cs" />
     <Compile Include="Frms\frmHome.cs">
       <SubType>Form</SubType>
@@ -207,6 +339,7 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

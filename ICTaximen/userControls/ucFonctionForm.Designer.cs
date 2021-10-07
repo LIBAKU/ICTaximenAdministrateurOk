@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlContainner = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlOption = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
             this.pnlPwd = new System.Windows.Forms.Panel();
             this.lblLib = new System.Windows.Forms.Label();
             this.txtlibelle = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.pbLibelle = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvFonction = new System.Windows.Forms.DataGridView();
             this.pnlContainner.SuspendLayout();
             this.pnlOption.SuspendLayout();
             this.pnlPwd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLibelle)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFonction)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlContainner
@@ -52,7 +53,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContainner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.pnlContainner.Controls.Add(this.panel1);
+            this.pnlContainner.Controls.Add(this.dgvFonction);
             this.pnlContainner.Controls.Add(this.lblTitle);
             this.pnlContainner.Controls.Add(this.pnlOption);
             this.pnlContainner.Controls.Add(this.pnlPwd);
@@ -84,6 +85,24 @@
             this.pnlOption.Name = "pnlOption";
             this.pnlOption.Size = new System.Drawing.Size(171, 101);
             this.pnlOption.TabIndex = 6;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSave.Image = global::ICTaximen.Properties.Resources.save_48;
+            this.btnSave.Location = new System.Drawing.Point(7, 6);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(158, 90);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Enregistrer";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // pnlPwd
             // 
@@ -123,23 +142,6 @@
             this.txtlibelle.TabIndex = 2;
             this.txtlibelle.Tag = "";
             // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnSave.Image = global::ICTaximen.Properties.Resources.save_48;
-            this.btnSave.Location = new System.Drawing.Point(7, 6);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(158, 90);
-            this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Enregistrer";
-            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSave.UseVisualStyleBackColor = false;
-            // 
             // pbLibelle
             // 
             this.pbLibelle.Image = global::ICTaximen.Properties.Resources.fonction_16;
@@ -150,24 +152,46 @@
             this.pbLibelle.TabIndex = 0;
             this.pbLibelle.TabStop = false;
             // 
-            // panel1
+            // dgvFonction
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(289, 190);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(326, 278);
-            this.panel1.TabIndex = 9;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(316, 269);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvFonction.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvFonction.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.dgvFonction.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvFonction.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFonction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvFonction.ColumnHeadersHeight = 35;
+            this.dgvFonction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvFonction.EnableHeadersVisualStyles = false;
+            this.dgvFonction.GridColor = System.Drawing.Color.SteelBlue;
+            this.dgvFonction.Location = new System.Drawing.Point(289, 190);
+            this.dgvFonction.Name = "dgvFonction";
+            this.dgvFonction.ReadOnly = true;
+            this.dgvFonction.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFonction.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvFonction.RowHeadersVisible = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvFonction.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvFonction.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvFonction.Size = new System.Drawing.Size(331, 281);
+            this.dgvFonction.TabIndex = 0;
             // 
             // ucFonctionForm
             // 
@@ -176,14 +200,14 @@
             this.Controls.Add(this.pnlContainner);
             this.Name = "ucFonctionForm";
             this.Size = new System.Drawing.Size(762, 519);
+            this.Load += new System.EventHandler(this.ucFonctionForm_Load);
             this.pnlContainner.ResumeLayout(false);
             this.pnlContainner.PerformLayout();
             this.pnlOption.ResumeLayout(false);
             this.pnlPwd.ResumeLayout(false);
             this.pnlPwd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLibelle)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFonction)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,7 +222,6 @@
         private System.Windows.Forms.Label lblLib;
         private System.Windows.Forms.TextBox txtlibelle;
         private System.Windows.Forms.PictureBox pbLibelle;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvFonction;
     }
 }

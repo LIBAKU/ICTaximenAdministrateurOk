@@ -8,17 +8,44 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ICTaximen.Frms;
+using System.IO;
 
 namespace ICTaximen.userControls
 {
     public partial class ucTaximan : UserControl
     {
+       
+
         public ucTaximan()
         {
             InitializeComponent();
             frmHome.Instance.BackButton.Visible = true;
         }
 
+        ucTaximanform pers = new ucTaximanform();
+
+        public void ChargerGrid()
+        {
+
+            try
+            {
+                // dgvPersonne.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dgvPersonne.RowTemplate.Height = 60;
+                dgvPersonne.AllowUserToAddRows = false;
+                dgvPersonne.DataSource = ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().GetTable("ttaximen");
+                DataGridViewImageColumn imgCol = new DataGridViewImageColumn();
+                imgCol = (DataGridViewImageColumn)dgvPersonne.Columns[10];
+                //imgCol = (DataGridViewImageColumn)dgvPersonne.Columns[11];
+                imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
+
+                //dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
         private void btnNew_Click(object sender, EventArgs e)
         {
             if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucTaximanform"))
@@ -33,6 +60,66 @@ namespace ICTaximen.userControls
             }
             frmHome.Instance.PnlContainer.Controls["ucTaximanform"].BringToFront();
            
+        }
+
+        private void ucTaximan_Load(object sender, EventArgs e)
+        {
+            ChargerGrid();
+        }
+
+        private void dgvPersonne_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+           
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if(String.IsNullOrWhiteSpace(pers.Id.Text.Trim()))
+            {
+                MessageBox.Show("veillez selectionner un element dans le tableau", "INFOS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucTaximanform"))
+                {
+                  
+                    pers.Dock = DockStyle.Fill;
+                    frmHome.Instance.PnlContainer.Controls.Add(pers);                   
+                    
+                }
+                frmHome.Instance.PnlContainer.Controls["ucTaximanform"].BringToFront();
+                frmHome.Instance.BackButton.Visible = true;
+                pers.IDMalade = int.Parse(pers.Id.Text.Trim());
+            }
+        }
+
+        private void dgvPersonne_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Byte[] img = (Byte[])dgvPersonne.CurrentRow.Cells[10].Value;
+
+            MemoryStream ms = new MemoryStream(img);
+
+            pers.imgP.Image = Image.FromStream(ms);
+
+            Byte[] img1 = (Byte[])dgvPersonne.CurrentRow.Cells[11].Value;
+
+            MemoryStream ms1 = new MemoryStream(img1);
+
+            pers.qrcodeP.Image = Image.FromStream(ms1);
+
+            textBox1.Text = dgvPersonne.CurrentRow.Cells[0].Value.ToString();
+            pers.Id.Text = dgvPersonne.CurrentRow.Cells[0].Value.ToString();
+            pers.Nom.Text = dgvPersonne.CurrentRow.Cells[1].Value.ToString();
+            pers.Postnom.Text = dgvPersonne.CurrentRow.Cells[2].Value.ToString();
+            pers.Prenom.Text = dgvPersonne.CurrentRow.Cells[3].Value.ToString();
+            pers.Telephone.Text = dgvPersonne.CurrentRow.Cells[8].Value.ToString();
+            pers.Email.Text = dgvPersonne.CurrentRow.Cells[9].Value.ToString();
+            pers.Numeronationnal.Text = dgvPersonne.CurrentRow.Cells[7].Value.ToString();
+            pers.Lieunaissance.Text = dgvPersonne.CurrentRow.Cells[6].Value.ToString();
+            pers.Username.Text = dgvPersonne.CurrentRow.Cells[13].Value.ToString();
+            pers.Password.Text = dgvPersonne.CurrentRow.Cells[14].Value.ToString();
         }
     }
 }

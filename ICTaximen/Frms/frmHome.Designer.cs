@@ -195,6 +195,7 @@
             // lblUname
             // 
             this.lblUname.AutoSize = true;
+            this.lblUname.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblUname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.lblUname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.lblUname.Location = new System.Drawing.Point(46, 90);
@@ -202,6 +203,7 @@
             this.lblUname.Size = new System.Drawing.Size(88, 17);
             this.lblUname.TabIndex = 1;
             this.lblUname.Text = "User Name";
+            this.lblUname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureUser
             // 

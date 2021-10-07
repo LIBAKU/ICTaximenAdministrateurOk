@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -11,6 +12,17 @@ namespace ICTaximen.Classes
     public class clsPhoto
     {
         public void ImageImport(PictureBox img)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            ofd.Filter = "choose Image(*.JPG; *.PNG; *.GIF)|*.jpg; *.png; *.gif";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                img.Image = Image.FromFile(ofd.FileName);
+            }
+        }
+        public void ImageImport1(PictureEdit img)
         {
             OpenFileDialog ofd = new OpenFileDialog();
 

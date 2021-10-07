@@ -13,6 +13,19 @@ namespace ICTaximen.userControls
 {
     public partial class ucAgeantform : UserControl
     {
+        string sexe;
+       private void  getsexe()
+        {
+            if(rdbFeminin.Checked == true)
+            {
+                sexe = "Feminin";
+            }
+            else if (rdbMasculin.Checked == true)
+            {
+                sexe = "Masculin";
+            }
+           
+        }
         public ucAgeantform()
         {
             InitializeComponent();
@@ -28,6 +41,11 @@ namespace ICTaximen.userControls
         {
             clsPhoto img = new clsPhoto();
             img.ImageImport(pictureAgent);
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
