@@ -29,25 +29,26 @@
         private void InitializeComponent()
         {
             this.pnlContainner = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rdbTaximan = new System.Windows.Forms.RadioButton();
+            this.rdbAgent = new System.Windows.Forms.RadioButton();
+            this.lblChoosePersonne = new System.Windows.Forms.Label();
+            this.cmbPersonne = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlChoose = new System.Windows.Forms.Panel();
             this.lblChooseAdresse = new System.Windows.Forms.Label();
             this.cmbAddresse = new System.Windows.Forms.ComboBox();
-            this.pnlOption = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblChoosePersonne = new System.Windows.Forms.Label();
-            this.cmbPersonne = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbRef = new System.Windows.Forms.PictureBox();
+            this.pnlOption = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.rdbFeminin = new System.Windows.Forms.RadioButton();
-            this.rdbMasculin = new System.Windows.Forms.RadioButton();
+            this.rdbProprietaire = new System.Windows.Forms.RadioButton();
             this.pnlContainner.SuspendLayout();
-            this.pnlChoose.SuspendLayout();
-            this.pnlOption.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlChoose.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRef)).BeginInit();
+            this.pnlOption.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlContainner
@@ -64,6 +65,82 @@
             this.pnlContainner.Name = "pnlContainner";
             this.pnlContainner.Size = new System.Drawing.Size(754, 510);
             this.pnlContainner.TabIndex = 4;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.panel1.Controls.Add(this.rdbProprietaire);
+            this.panel1.Controls.Add(this.rdbTaximan);
+            this.panel1.Controls.Add(this.rdbAgent);
+            this.panel1.Controls.Add(this.lblChoosePersonne);
+            this.panel1.Controls.Add(this.cmbPersonne);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Location = new System.Drawing.Point(122, 94);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(508, 77);
+            this.panel1.TabIndex = 9;
+            // 
+            // rdbTaximan
+            // 
+            this.rdbTaximan.AutoSize = true;
+            this.rdbTaximan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.rdbTaximan.Location = new System.Drawing.Point(349, 8);
+            this.rdbTaximan.Name = "rdbTaximan";
+            this.rdbTaximan.Size = new System.Drawing.Size(65, 17);
+            this.rdbTaximan.TabIndex = 10;
+            this.rdbTaximan.TabStop = true;
+            this.rdbTaximan.Text = "Taximan";
+            this.rdbTaximan.UseVisualStyleBackColor = true;
+            // 
+            // rdbAgent
+            // 
+            this.rdbAgent.AutoSize = true;
+            this.rdbAgent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.rdbAgent.Location = new System.Drawing.Point(284, 8);
+            this.rdbAgent.Name = "rdbAgent";
+            this.rdbAgent.Size = new System.Drawing.Size(53, 17);
+            this.rdbAgent.TabIndex = 11;
+            this.rdbAgent.TabStop = true;
+            this.rdbAgent.Text = "Agent";
+            this.rdbAgent.UseVisualStyleBackColor = true;
+            // 
+            // lblChoosePersonne
+            // 
+            this.lblChoosePersonne.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChoosePersonne.AutoSize = true;
+            this.lblChoosePersonne.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblChoosePersonne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblChoosePersonne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblChoosePersonne.Location = new System.Drawing.Point(11, 8);
+            this.lblChoosePersonne.Name = "lblChoosePersonne";
+            this.lblChoosePersonne.Size = new System.Drawing.Size(163, 20);
+            this.lblChoosePersonne.TabIndex = 9;
+            this.lblChoosePersonne.Text = "Chercher Personne";
+            // 
+            // cmbPersonne
+            // 
+            this.cmbPersonne.AllowDrop = true;
+            this.cmbPersonne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.cmbPersonne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbPersonne.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.cmbPersonne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.cmbPersonne.FormattingEnabled = true;
+            this.cmbPersonne.Location = new System.Drawing.Point(43, 36);
+            this.cmbPersonne.Name = "cmbPersonne";
+            this.cmbPersonne.Size = new System.Drawing.Size(455, 32);
+            this.cmbPersonne.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ICTaximen.Properties.Resources.Name1;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // lblTitle
             // 
@@ -117,6 +194,16 @@
             this.cmbAddresse.Size = new System.Drawing.Size(455, 32);
             this.cmbAddresse.TabIndex = 1;
             // 
+            // pbRef
+            // 
+            this.pbRef.Image = global::ICTaximen.Properties.Resources.Address_16;
+            this.pbRef.Location = new System.Drawing.Point(13, 39);
+            this.pbRef.Name = "pbRef";
+            this.pbRef.Size = new System.Drawing.Size(24, 24);
+            this.pbRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRef.TabIndex = 0;
+            this.pbRef.TabStop = false;
+            // 
             // pnlOption
             // 
             this.pnlOption.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -127,67 +214,6 @@
             this.pnlOption.Name = "pnlOption";
             this.pnlOption.Size = new System.Drawing.Size(171, 101);
             this.pnlOption.TabIndex = 6;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panel1.Controls.Add(this.rdbFeminin);
-            this.panel1.Controls.Add(this.rdbMasculin);
-            this.panel1.Controls.Add(this.lblChoosePersonne);
-            this.panel1.Controls.Add(this.cmbPersonne);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(122, 94);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(508, 77);
-            this.panel1.TabIndex = 9;
-            // 
-            // lblChoosePersonne
-            // 
-            this.lblChoosePersonne.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblChoosePersonne.AutoSize = true;
-            this.lblChoosePersonne.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblChoosePersonne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblChoosePersonne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblChoosePersonne.Location = new System.Drawing.Point(11, 8);
-            this.lblChoosePersonne.Name = "lblChoosePersonne";
-            this.lblChoosePersonne.Size = new System.Drawing.Size(163, 20);
-            this.lblChoosePersonne.TabIndex = 9;
-            this.lblChoosePersonne.Text = "Chercher Personne";
-            // 
-            // cmbPersonne
-            // 
-            this.cmbPersonne.AllowDrop = true;
-            this.cmbPersonne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.cmbPersonne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbPersonne.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.cmbPersonne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.cmbPersonne.FormattingEnabled = true;
-            this.cmbPersonne.Location = new System.Drawing.Point(43, 36);
-            this.cmbPersonne.Name = "cmbPersonne";
-            this.cmbPersonne.Size = new System.Drawing.Size(455, 32);
-            this.cmbPersonne.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ICTaximen.Properties.Resources.Name1;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pbRef
-            // 
-            this.pbRef.Image = global::ICTaximen.Properties.Resources.Address_16;
-            this.pbRef.Location = new System.Drawing.Point(13, 39);
-            this.pbRef.Name = "pbRef";
-            this.pbRef.Size = new System.Drawing.Size(24, 24);
-            this.pbRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRef.TabIndex = 0;
-            this.pbRef.TabStop = false;
             // 
             // btnSave
             // 
@@ -206,29 +232,17 @@
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // rdbFeminin
+            // rdbProprietaire
             // 
-            this.rdbFeminin.AutoSize = true;
-            this.rdbFeminin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.rdbFeminin.Location = new System.Drawing.Point(442, 8);
-            this.rdbFeminin.Name = "rdbFeminin";
-            this.rdbFeminin.Size = new System.Drawing.Size(55, 17);
-            this.rdbFeminin.TabIndex = 10;
-            this.rdbFeminin.TabStop = true;
-            this.rdbFeminin.Text = "Autres";
-            this.rdbFeminin.UseVisualStyleBackColor = true;
-            // 
-            // rdbMasculin
-            // 
-            this.rdbMasculin.AutoSize = true;
-            this.rdbMasculin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.rdbMasculin.Location = new System.Drawing.Point(362, 8);
-            this.rdbMasculin.Name = "rdbMasculin";
-            this.rdbMasculin.Size = new System.Drawing.Size(53, 17);
-            this.rdbMasculin.TabIndex = 11;
-            this.rdbMasculin.TabStop = true;
-            this.rdbMasculin.Text = "Agent";
-            this.rdbMasculin.UseVisualStyleBackColor = true;
+            this.rdbProprietaire.AutoSize = true;
+            this.rdbProprietaire.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.rdbProprietaire.Location = new System.Drawing.Point(426, 8);
+            this.rdbProprietaire.Name = "rdbProprietaire";
+            this.rdbProprietaire.Size = new System.Drawing.Size(78, 17);
+            this.rdbProprietaire.TabIndex = 10;
+            this.rdbProprietaire.TabStop = true;
+            this.rdbProprietaire.Text = "Proprietaire";
+            this.rdbProprietaire.UseVisualStyleBackColor = true;
             // 
             // ucAttributionAdresseForm
             // 
@@ -239,13 +253,13 @@
             this.Size = new System.Drawing.Size(762, 519);
             this.pnlContainner.ResumeLayout(false);
             this.pnlContainner.PerformLayout();
-            this.pnlChoose.ResumeLayout(false);
-            this.pnlChoose.PerformLayout();
-            this.pnlOption.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlChoose.ResumeLayout(false);
+            this.pnlChoose.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRef)).EndInit();
+            this.pnlOption.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -264,7 +278,8 @@
         private System.Windows.Forms.PictureBox pbRef;
         private System.Windows.Forms.Panel pnlOption;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.RadioButton rdbFeminin;
-        private System.Windows.Forms.RadioButton rdbMasculin;
+        private System.Windows.Forms.RadioButton rdbTaximan;
+        private System.Windows.Forms.RadioButton rdbAgent;
+        private System.Windows.Forms.RadioButton rdbProprietaire;
     }
 }

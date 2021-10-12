@@ -104,6 +104,7 @@ namespace ICTaximen.userControls
         }
         void RefreshForm(String index = null)
         {
+            txtid.Text = "";
             IDMalade = -1;
             txtNom.Text = "";
             txtPostom.Text = "";
@@ -119,6 +120,7 @@ namespace ICTaximen.userControls
             dateNaissance1 = "";
             //txtFonction.SelectedIndex = -1;
             picPhoto.Image = Properties.Resources.user_64;
+            qrcodeP.Image = Properties.Resources.icons8_QR_Code_64;
             sexe = "";
             
             
@@ -217,10 +219,17 @@ namespace ICTaximen.userControls
             }
         }
 
-        private void picPhoto_Click(object sender, EventArgs e)
+  
+
+        private void picPhoto_DoubleClick(object sender, EventArgs e)
         {
             clsPhoto img = new clsPhoto();
             img.ImageImport1(picPhoto);
+        }
+
+        private void picPhoto_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

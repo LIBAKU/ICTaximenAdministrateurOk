@@ -40,5 +40,19 @@ namespace ICTaximen.Classes
             "code","nom","postnom","prenom","sexe","numeronational","lieunaissance","datenaissance","telephone","email","image","qrCode","username","userpassword","usersession"
     };
 
+        public static String[] EnginDBChamps = new String[]
+   {
+           "code","marque","couleur","numerochasis","numeromoteur","qrcode","proprietaire","categorie","usersession"
+   };
+        
+        public static String[] AffectationDBChamps = new String[]
+   {
+           "code",            
+            "refengin",
+            "reftaximan",
+            "dateaffectation",
+            "usersession"
+   };
+
     }
 }

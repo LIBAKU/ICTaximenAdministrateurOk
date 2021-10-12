@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlContainner = new System.Windows.Forms.Panel();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.dateNaissance = new System.Windows.Forms.MonthCalendar();
             this.pnlOption = new System.Windows.Forms.Panel();
@@ -81,7 +82,6 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.txtid = new System.Windows.Forms.TextBox();
             this.pnlContainner.SuspendLayout();
             this.panel8.SuspendLayout();
             this.pnlOption.SuspendLayout();
@@ -135,6 +135,20 @@
             this.pnlContainner.Name = "pnlContainner";
             this.pnlContainner.Size = new System.Drawing.Size(754, 510);
             this.pnlContainner.TabIndex = 0;
+            // 
+            // txtid
+            // 
+            this.txtid.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.txtid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtid.Enabled = false;
+            this.txtid.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.txtid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(161)))), ((int)(((byte)(180)))));
+            this.txtid.Location = new System.Drawing.Point(656, 464);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(71, 23);
+            this.txtid.TabIndex = 12;
+            this.txtid.Tag = "";
             // 
             // panel8
             // 
@@ -208,7 +222,8 @@
             this.picPhoto.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picPhoto.Size = new System.Drawing.Size(167, 167);
             this.picPhoto.TabIndex = 305;
-            this.picPhoto.Click += new System.EventHandler(this.picPhoto_Click);
+            this.picPhoto.EditValueChanged += new System.EventHandler(this.picPhoto_EditValueChanged);
+            this.picPhoto.DoubleClick += new System.EventHandler(this.picPhoto_DoubleClick);
             // 
             // panel1
             // 
@@ -755,20 +770,6 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
-            // 
-            // txtid
-            // 
-            this.txtid.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.txtid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtid.Enabled = false;
-            this.txtid.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.txtid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(161)))), ((int)(((byte)(180)))));
-            this.txtid.Location = new System.Drawing.Point(662, 468);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(71, 23);
-            this.txtid.TabIndex = 12;
-            this.txtid.Tag = "";
             // 
             // ucTaximanform
             // 

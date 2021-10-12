@@ -37,15 +37,27 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchControl = new DevExpress.XtraEditors.SearchControl();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Photo = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Postnom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sexe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Datenaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lieunaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Numeronational = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonne)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.searchControl);
             this.panel1.Controls.Add(this.dgvPersonne);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Controls.Add(this.btnUpdate);
@@ -75,6 +87,18 @@
             this.dgvPersonne.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPersonne.ColumnHeadersHeight = 35;
             this.dgvPersonne.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvPersonne.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.Photo,
+            this.Nom,
+            this.Postnom,
+            this.Prenom,
+            this.Sexe,
+            this.Datenaissance,
+            this.Lieunaissance,
+            this.Numeronational,
+            this.Telephone,
+            this.Email});
             this.dgvPersonne.EnableHeadersVisualStyles = false;
             this.dgvPersonne.GridColor = System.Drawing.Color.SteelBlue;
             this.dgvPersonne.Location = new System.Drawing.Point(14, 45);
@@ -108,12 +132,11 @@
             this.lblTitle.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblTitle.Location = new System.Drawing.Point(21, 13);
+            this.lblTitle.Location = new System.Drawing.Point(11, 19);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(82, 20);
+            this.lblTitle.Size = new System.Drawing.Size(119, 20);
             this.lblTitle.TabIndex = 9;
-            this.lblTitle.Text = "Text Title";
-            this.lblTitle.Visible = false;
+            this.lblTitle.Text = "Liste Taximen";
             // 
             // btnUpdate
             // 
@@ -149,6 +172,7 @@
             this.btnDelete.Text = "Suprimer";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnNew
             // 
@@ -168,12 +192,112 @@
             this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // textBox1
+            // searchControl
             // 
-            this.textBox1.Location = new System.Drawing.Point(447, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
+            this.searchControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchControl.Location = new System.Drawing.Point(482, 15);
+            this.searchControl.Name = "searchControl";
+            this.searchControl.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.searchControl.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.searchControl.Properties.Appearance.Options.UseBackColor = true;
+            this.searchControl.Properties.Appearance.Options.UseForeColor = true;
+            this.searchControl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.searchControl.Properties.NullValuePrompt = "Tapez du text pour chercher...";
+            this.searchControl.Size = new System.Drawing.Size(264, 20);
+            this.searchControl.TabIndex = 12;
+            this.searchControl.ToolTipTitle = "chercher ici";
+            this.searchControl.SelectedIndexChanged += new System.EventHandler(this.searchControl_SelectedIndexChanged);
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "CODE";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // Photo
+            // 
+            this.Photo.DataPropertyName = "Photo";
+            this.Photo.HeaderText = "PHOTO";
+            this.Photo.Name = "Photo";
+            this.Photo.ReadOnly = true;
+            this.Photo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Photo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Nom
+            // 
+            this.Nom.DataPropertyName = "Nom";
+            this.Nom.HeaderText = "NOM";
+            this.Nom.Name = "Nom";
+            this.Nom.ReadOnly = true;
+            // 
+            // Postnom
+            // 
+            this.Postnom.DataPropertyName = "Postnom";
+            this.Postnom.HeaderText = "POSTNOM";
+            this.Postnom.Name = "Postnom";
+            this.Postnom.ReadOnly = true;
+            // 
+            // Prenom
+            // 
+            this.Prenom.DataPropertyName = "Prenom";
+            this.Prenom.HeaderText = "PRENOM";
+            this.Prenom.Name = "Prenom";
+            this.Prenom.ReadOnly = true;
+            // 
+            // Sexe
+            // 
+            this.Sexe.DataPropertyName = "Sexe";
+            this.Sexe.HeaderText = "SEXE";
+            this.Sexe.Name = "Sexe";
+            this.Sexe.ReadOnly = true;
+            // 
+            // Datenaissance
+            // 
+            this.Datenaissance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Datenaissance.DataPropertyName = "Datenaissance";
+            this.Datenaissance.HeaderText = "DATE NAISSANCE";
+            this.Datenaissance.Name = "Datenaissance";
+            this.Datenaissance.ReadOnly = true;
+            this.Datenaissance.Width = 172;
+            // 
+            // Lieunaissance
+            // 
+            this.Lieunaissance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Lieunaissance.DataPropertyName = "Lieunaissance";
+            this.Lieunaissance.HeaderText = "ORIGINE";
+            this.Lieunaissance.Name = "Lieunaissance";
+            this.Lieunaissance.ReadOnly = true;
+            this.Lieunaissance.Width = 102;
+            // 
+            // Numeronational
+            // 
+            this.Numeronational.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Numeronational.DataPropertyName = "Numeronational";
+            this.Numeronational.HeaderText = "NUMERO NATIONNAL";
+            this.Numeronational.Name = "Numeronational";
+            this.Numeronational.ReadOnly = true;
+            this.Numeronational.Visible = false;
+            this.Numeronational.Width = 204;
+            // 
+            // Telephone
+            // 
+            this.Telephone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Telephone.DataPropertyName = "Telephone";
+            this.Telephone.HeaderText = "TELEPHONE";
+            this.Telephone.Name = "Telephone";
+            this.Telephone.ReadOnly = true;
+            this.Telephone.Width = 121;
+            // 
+            // Email
+            // 
+            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "MAIL";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             // 
             // ucTaximan
             // 
@@ -183,9 +307,11 @@
             this.Name = "ucTaximan";
             this.Size = new System.Drawing.Size(762, 519);
             this.Load += new System.EventHandler(this.ucTaximan_Load);
+            this.VisibleChanged += new System.EventHandler(this.ucTaximan_VisibleChanged);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonne)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,6 +324,17 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.DataGridView dgvPersonne;
-        private System.Windows.Forms.TextBox textBox1;
+        private DevExpress.XtraEditors.SearchControl searchControl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewImageColumn Photo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Postnom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Prenom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sexe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Datenaissance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lieunaissance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Numeronational;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
     }
 }

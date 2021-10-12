@@ -34,9 +34,7 @@
             this.pnlOption = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureAgent = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.QRcodePersonne = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -81,13 +79,14 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.picPhoto = new DevExpress.XtraEditors.PictureEdit();
+            this.pEQrcode = new DevExpress.XtraEditors.PictureEdit();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.pnlContainner.SuspendLayout();
             this.panel8.SuspendLayout();
             this.pnlOption.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAgent)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.QRcodePersonne)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel5.SuspendLayout();
@@ -109,12 +108,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhoto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEQrcode.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlContainner
             // 
             this.pnlContainner.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlContainner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.pnlContainner.Controls.Add(this.txtid);
             this.pnlContainner.Controls.Add(this.panel8);
             this.pnlContainner.Controls.Add(this.pnlOption);
             this.pnlContainner.Controls.Add(this.panel7);
@@ -182,43 +184,22 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panel7.Controls.Add(this.pictureAgent);
+            this.panel7.Controls.Add(this.picPhoto);
             this.panel7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel7.Location = new System.Drawing.Point(363, 139);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(184, 173);
             this.panel7.TabIndex = 4;
             // 
-            // pictureAgent
-            // 
-            this.pictureAgent.Image = global::ICTaximen.Properties.Resources.image_715645;
-            this.pictureAgent.Location = new System.Drawing.Point(12, 12);
-            this.pictureAgent.Name = "pictureAgent";
-            this.pictureAgent.Size = new System.Drawing.Size(156, 153);
-            this.pictureAgent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureAgent.TabIndex = 1;
-            this.pictureAgent.TabStop = false;
-            this.pictureAgent.Click += new System.EventHandler(this.pictureAgent_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panel1.Controls.Add(this.QRcodePersonne);
+            this.panel1.Controls.Add(this.pEQrcode);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(562, 139);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(171, 173);
             this.panel1.TabIndex = 4;
-            // 
-            // QRcodePersonne
-            // 
-            this.QRcodePersonne.Image = global::ICTaximen.Properties.Resources.icons8_QR_Code_64;
-            this.QRcodePersonne.Location = new System.Drawing.Point(7, 10);
-            this.QRcodePersonne.Name = "QRcodePersonne";
-            this.QRcodePersonne.Size = new System.Drawing.Size(156, 153);
-            this.QRcodePersonne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.QRcodePersonne.TabIndex = 2;
-            this.QRcodePersonne.TabStop = false;
             // 
             // panel11
             // 
@@ -739,6 +720,53 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
+            // picPhoto
+            // 
+            this.picPhoto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picPhoto.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picPhoto.EditValue = global::ICTaximen.Properties.Resources.user_64;
+            this.picPhoto.Location = new System.Drawing.Point(9, 3);
+            this.picPhoto.Name = "picPhoto";
+            this.picPhoto.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.picPhoto.Properties.Appearance.Options.UseBackColor = true;
+            this.picPhoto.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picPhoto.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.picPhoto.Size = new System.Drawing.Size(167, 167);
+            this.picPhoto.TabIndex = 306;
+            this.picPhoto.DoubleClick += new System.EventHandler(this.picPhoto_DoubleClick);
+            // 
+            // pEQrcode
+            // 
+            this.pEQrcode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pEQrcode.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pEQrcode.EditValue = global::ICTaximen.Properties.Resources.icons8_QR_Code_64;
+            this.pEQrcode.Location = new System.Drawing.Point(2, 5);
+            this.pEQrcode.Name = "pEQrcode";
+            this.pEQrcode.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.pEQrcode.Properties.Appearance.Options.UseBackColor = true;
+            this.pEQrcode.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pEQrcode.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pEQrcode.Size = new System.Drawing.Size(166, 163);
+            this.pEQrcode.TabIndex = 307;
+            // 
+            // txtid
+            // 
+            this.txtid.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.txtid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtid.Enabled = false;
+            this.txtid.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.txtid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(161)))), ((int)(((byte)(180)))));
+            this.txtid.Location = new System.Drawing.Point(659, 464);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(71, 23);
+            this.txtid.TabIndex = 13;
+            this.txtid.Tag = "";
+            // 
             // ucAgeantform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -747,12 +775,11 @@
             this.Name = "ucAgeantform";
             this.Size = new System.Drawing.Size(762, 519);
             this.pnlContainner.ResumeLayout(false);
+            this.pnlContainner.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.pnlOption.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAgent)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.QRcodePersonne)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -784,6 +811,8 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhoto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEQrcode.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -796,9 +825,7 @@
         private System.Windows.Forms.Panel pnlOption;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureAgent;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox QRcodePersonne;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtUsername;
@@ -843,5 +870,8 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private DevExpress.XtraEditors.PictureEdit picPhoto;
+        private DevExpress.XtraEditors.PictureEdit pEQrcode;
+        private System.Windows.Forms.TextBox txtid;
     }
 }

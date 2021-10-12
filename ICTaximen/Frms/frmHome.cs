@@ -85,15 +85,15 @@ namespace ICTaximen.Frms
             lblUname.Text = ALLProjetctdll.Classes.UserSession.GetInstance().UserName;
             //MainControlClass.showControl(dsb, pnlContainner);
         }
-
+       
         private void frmHome_Load(object sender, EventArgs e)
         {
             btnReturn.Visible = false;
             _obj = this;
 
-            ucDashboard uc = new ucDashboard();
-            uc.Dock = DockStyle.Fill;
-            pnlContainner.Controls.Add(uc);
+            
+            dashboard.Dock = DockStyle.Fill;
+            pnlContainner.Controls.Add(dashboard);
             lblTitle.Text = Tit.DashBord;
         }
 
@@ -119,6 +119,8 @@ namespace ICTaximen.Frms
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             //MainControlClass.showControl(dsb, pnlContainner);
+            pnlContainner.Controls.Clear();
+            
             dashboard.Dock = DockStyle.Fill;
             pnlContainner.Controls.Add(dashboard);
             pnlContainner.Controls["ucDashboard"].BringToFront();
@@ -133,6 +135,8 @@ namespace ICTaximen.Frms
         private void btnEnregistrement_Click(object sender, EventArgs e)
         {
             // MainControlClass.showControl(reg, pnlContainner);
+            pnlContainner.Controls.Clear();
+
             registerhome.Dock = DockStyle.Fill;
             pnlContainner.Controls.Add(registerhome);
             pnlContainner.Controls["ucEnregistrement"].BringToFront();
@@ -147,6 +151,8 @@ namespace ICTaximen.Frms
         private void btnSettigs_Click(object sender, EventArgs e)
         {
             //MainControlClass.showControl(sett, pnlContainner);
+            pnlContainner.Controls.Clear();
+
             settigs.Dock = DockStyle.Fill;
             pnlContainner.Controls.Add(settigs);
             pnlContainner.Controls["ucSettings"].BringToFront();
@@ -160,6 +166,8 @@ namespace ICTaximen.Frms
 
         private void btnContactus_Click(object sender, EventArgs e)
         {
+            pnlContainner.Controls.Clear();
+
             contact.Dock = DockStyle.Fill;
             pnlContainner.Controls.Add(contact);
             pnlContainner.Controls["ucContactus"].BringToFront();
@@ -206,9 +214,30 @@ namespace ICTaximen.Frms
         {
             //MainControlClass.returnControl(pnlContainner);
             //pnlContainner.Controls["ucDashboard"].BringToFront();
-            pnlContainner.Controls.RemoveAt(0);
-            btnReturn.Visible = false;
+
+
             
+               //
+            if(pnlContainner.Controls.Count >= 0)
+            {
+                if(pnlContainner.Controls.Count == 1)
+                {
+                    btnReturn.Visible = false;
+                    dashboard.Dock = DockStyle.Fill;
+                    pnlContainner.Controls.Add(dashboard);
+                    pnlContainner.Controls["ucDashboard"].BringToFront();
+                    lblTitle.Text = Tit.DashBord;
+                    pnlNav.Top = btnDashboard.Top;
+                    pnlNav.Left = btnDashboard.Left;
+
+                }
+                else
+                {
+                    pnlContainner.Controls.RemoveAt(0); 
+                }
+               
+            }
+        
 
         }
 

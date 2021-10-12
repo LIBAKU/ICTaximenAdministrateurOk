@@ -24,7 +24,9 @@ namespace ICTaximen.Classes
         }
         public void ImageImport1(PictureEdit img)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
+            try
+            {
+             OpenFileDialog ofd = new OpenFileDialog();
 
             ofd.Filter = "choose Image(*.JPG; *.PNG; *.GIF)|*.jpg; *.png; *.gif";
 
@@ -32,6 +34,12 @@ namespace ICTaximen.Classes
             {
                 img.Image = Image.FromFile(ofd.FileName);
             }
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error!!");
+            }
+           
         }
     }
 }
