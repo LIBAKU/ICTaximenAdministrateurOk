@@ -20,14 +20,7 @@ namespace ICTaximen.userControls
 
             txtlibelle.Text = "";
             cmbChoose.Text = "";
-            //IDClient = int.Parse(data[0].ToString());
-            //IDEngin = -1;
-            //IDPaie = -1;
-            //txtnomClient.Text = "";
-            //txtnomEngin.Text = "";
-            //txtmontant.Text = ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().retourId("prix", "tparametreprix");
-            //txtdate.Text = "";
-
+           
         }
         public Label AddresseTitle
         {

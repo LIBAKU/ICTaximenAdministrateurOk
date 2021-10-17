@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace ICTaximen.userControls
 {
-    public partial class ucDashboard : UserControl
+    public partial class ucReport : UserControl
     {
-        
-
-        public ucDashboard()
+        public ucReport()
         {
             InitializeComponent();
-        }
-
-        private void ucDashboard_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

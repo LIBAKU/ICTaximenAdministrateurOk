@@ -66,14 +66,7 @@ namespace ICTaximen.userControls
 
         private void btnAttribuer_Click(object sender, EventArgs e)
         {
-            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAttributionFonction"))
-            {
-                ucAttributionFonction un = new ucAttributionFonction();
-                un.Dock = DockStyle.Fill;
-                frmHome.Instance.PnlContainer.Controls.Add(un);
-            }
-            frmHome.Instance.PnlContainer.Controls["ucAttributionFonction"].BringToFront();
-            frmHome.Instance.BackButton.Visible = true;
+           
         }
 
         private void btnEngin_Click(object sender, EventArgs e)

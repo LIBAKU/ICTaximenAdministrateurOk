@@ -1,6 +1,6 @@
 ﻿namespace ICTaximen.userControls
 {
-    partial class ucAttributionAdresseForm
+    partial class ucAdhesion
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,22 +30,19 @@
         {
             this.pnlContainner = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtid = new System.Windows.Forms.Label();
-            this.rdbProprietaire = new System.Windows.Forms.RadioButton();
-            this.rdbTaximan = new System.Windows.Forms.RadioButton();
-            this.rdbAgent = new System.Windows.Forms.RadioButton();
             this.lblChoosePersonne = new System.Windows.Forms.Label();
-            this.cmbPersonne = new System.Windows.Forms.ComboBox();
+            this.cmbTaximen = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlChoose = new System.Windows.Forms.Panel();
-            this.btnNew = new System.Windows.Forms.Button();
-            this.txtRef = new System.Windows.Forms.Label();
             this.lblChooseAdresse = new System.Windows.Forms.Label();
-            this.cmbAddresse = new System.Windows.Forms.ComboBox();
+            this.cmbAssociation = new System.Windows.Forms.ComboBox();
             this.pbRef = new System.Windows.Forms.PictureBox();
             this.pnlOption = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtTaximan = new System.Windows.Forms.Label();
+            this.txtAssociation = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.Label();
             this.pnlContainner.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,6 +57,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContainner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.pnlContainner.Controls.Add(this.txtId);
             this.pnlContainner.Controls.Add(this.panel1);
             this.pnlContainner.Controls.Add(this.lblTitle);
             this.pnlContainner.Controls.Add(this.pnlChoose);
@@ -67,72 +65,21 @@
             this.pnlContainner.Location = new System.Drawing.Point(4, 4);
             this.pnlContainner.Name = "pnlContainner";
             this.pnlContainner.Size = new System.Drawing.Size(754, 510);
-            this.pnlContainner.TabIndex = 4;
+            this.pnlContainner.TabIndex = 5;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panel1.Controls.Add(this.txtid);
-            this.panel1.Controls.Add(this.rdbProprietaire);
-            this.panel1.Controls.Add(this.rdbTaximan);
-            this.panel1.Controls.Add(this.rdbAgent);
+            this.panel1.Controls.Add(this.txtTaximan);
             this.panel1.Controls.Add(this.lblChoosePersonne);
-            this.panel1.Controls.Add(this.cmbPersonne);
+            this.panel1.Controls.Add(this.cmbTaximen);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(122, 94);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(508, 77);
             this.panel1.TabIndex = 9;
-            // 
-            // txtid
-            // 
-            this.txtid.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtid.AutoSize = true;
-            this.txtid.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.txtid.Location = new System.Drawing.Point(478, 6);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(0, 20);
-            this.txtid.TabIndex = 12;
-            // 
-            // rdbProprietaire
-            // 
-            this.rdbProprietaire.AutoSize = true;
-            this.rdbProprietaire.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.rdbProprietaire.Location = new System.Drawing.Point(328, 8);
-            this.rdbProprietaire.Name = "rdbProprietaire";
-            this.rdbProprietaire.Size = new System.Drawing.Size(78, 17);
-            this.rdbProprietaire.TabIndex = 10;
-            this.rdbProprietaire.TabStop = true;
-            this.rdbProprietaire.Text = "Proprietaire";
-            this.rdbProprietaire.UseVisualStyleBackColor = true;
-            // 
-            // rdbTaximan
-            // 
-            this.rdbTaximan.AutoSize = true;
-            this.rdbTaximan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.rdbTaximan.Location = new System.Drawing.Point(251, 8);
-            this.rdbTaximan.Name = "rdbTaximan";
-            this.rdbTaximan.Size = new System.Drawing.Size(65, 17);
-            this.rdbTaximan.TabIndex = 10;
-            this.rdbTaximan.TabStop = true;
-            this.rdbTaximan.Text = "Taximan";
-            this.rdbTaximan.UseVisualStyleBackColor = true;
-            // 
-            // rdbAgent
-            // 
-            this.rdbAgent.AutoSize = true;
-            this.rdbAgent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.rdbAgent.Location = new System.Drawing.Point(186, 8);
-            this.rdbAgent.Name = "rdbAgent";
-            this.rdbAgent.Size = new System.Drawing.Size(53, 17);
-            this.rdbAgent.TabIndex = 11;
-            this.rdbAgent.TabStop = true;
-            this.rdbAgent.Text = "Agent";
-            this.rdbAgent.UseVisualStyleBackColor = true;
             // 
             // lblChoosePersonne
             // 
@@ -143,24 +90,23 @@
             this.lblChoosePersonne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.lblChoosePersonne.Location = new System.Drawing.Point(11, 8);
             this.lblChoosePersonne.Name = "lblChoosePersonne";
-            this.lblChoosePersonne.Size = new System.Drawing.Size(163, 20);
+            this.lblChoosePersonne.Size = new System.Drawing.Size(153, 20);
             this.lblChoosePersonne.TabIndex = 9;
-            this.lblChoosePersonne.Text = "Chercher Personne";
+            this.lblChoosePersonne.Text = "Chercher Taximan";
             // 
-            // cmbPersonne
+            // cmbTaximen
             // 
-            this.cmbPersonne.AllowDrop = true;
-            this.cmbPersonne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.cmbPersonne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbPersonne.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.cmbPersonne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.cmbPersonne.FormattingEnabled = true;
-            this.cmbPersonne.Location = new System.Drawing.Point(43, 36);
-            this.cmbPersonne.Name = "cmbPersonne";
-            this.cmbPersonne.Size = new System.Drawing.Size(455, 32);
-            this.cmbPersonne.TabIndex = 1;
-            this.cmbPersonne.SelectedIndexChanged += new System.EventHandler(this.cmbPersonne_SelectedIndexChanged);
-            this.cmbPersonne.MouseHover += new System.EventHandler(this.cmbPersonne_MouseHover);
+            this.cmbTaximen.AllowDrop = true;
+            this.cmbTaximen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.cmbTaximen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbTaximen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.cmbTaximen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.cmbTaximen.FormattingEnabled = true;
+            this.cmbTaximen.Location = new System.Drawing.Point(43, 36);
+            this.cmbTaximen.Name = "cmbTaximen";
+            this.cmbTaximen.Size = new System.Drawing.Size(455, 32);
+            this.cmbTaximen.TabIndex = 1;
+            this.cmbTaximen.SelectedIndexChanged += new System.EventHandler(this.cmbTaximen_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -179,56 +125,25 @@
             this.lblTitle.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblTitle.Location = new System.Drawing.Point(284, 32);
+            this.lblTitle.Location = new System.Drawing.Point(341, 30);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(172, 20);
+            this.lblTitle.Size = new System.Drawing.Size(84, 20);
             this.lblTitle.TabIndex = 8;
-            this.lblTitle.Text = "Attribution addresse";
+            this.lblTitle.Text = "Adhesion";
             // 
             // pnlChoose
             // 
             this.pnlChoose.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlChoose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.pnlChoose.Controls.Add(this.btnNew);
-            this.pnlChoose.Controls.Add(this.txtRef);
+            this.pnlChoose.Controls.Add(this.txtAssociation);
             this.pnlChoose.Controls.Add(this.lblChooseAdresse);
-            this.pnlChoose.Controls.Add(this.cmbAddresse);
+            this.pnlChoose.Controls.Add(this.cmbAssociation);
             this.pnlChoose.Controls.Add(this.pbRef);
             this.pnlChoose.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnlChoose.Location = new System.Drawing.Point(122, 177);
             this.pnlChoose.Name = "pnlChoose";
-            this.pnlChoose.Size = new System.Drawing.Size(508, 120);
+            this.pnlChoose.Size = new System.Drawing.Size(508, 77);
             this.pnlChoose.TabIndex = 7;
-            // 
-            // btnNew
-            // 
-            this.btnNew.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnNew.FlatAppearance.BorderSize = 0;
-            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNew.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnNew.Image = global::ICTaximen.Properties.Resources.new_16;
-            this.btnNew.Location = new System.Drawing.Point(384, 72);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(114, 43);
-            this.btnNew.TabIndex = 14;
-            this.btnNew.Text = "Nouveaux";
-            this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNew.UseVisualStyleBackColor = false;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
-            // 
-            // txtRef
-            // 
-            this.txtRef.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtRef.AutoSize = true;
-            this.txtRef.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtRef.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtRef.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.txtRef.Location = new System.Drawing.Point(480, 10);
-            this.txtRef.Name = "txtRef";
-            this.txtRef.Size = new System.Drawing.Size(0, 20);
-            this.txtRef.TabIndex = 13;
             // 
             // lblChooseAdresse
             // 
@@ -237,26 +152,25 @@
             this.lblChooseAdresse.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblChooseAdresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblChooseAdresse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblChooseAdresse.Location = new System.Drawing.Point(9, 13);
+            this.lblChooseAdresse.Location = new System.Drawing.Point(11, 8);
             this.lblChooseAdresse.Name = "lblChooseAdresse";
-            this.lblChooseAdresse.Size = new System.Drawing.Size(191, 20);
+            this.lblChooseAdresse.Size = new System.Drawing.Size(235, 20);
             this.lblChooseAdresse.TabIndex = 9;
-            this.lblChooseAdresse.Text = "Selectionner Addresse";
+            this.lblChooseAdresse.Text = "Selectionner ASSOCIATION";
             // 
-            // cmbAddresse
+            // cmbAssociation
             // 
-            this.cmbAddresse.AllowDrop = true;
-            this.cmbAddresse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.cmbAddresse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbAddresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.cmbAddresse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.cmbAddresse.FormattingEnabled = true;
-            this.cmbAddresse.Location = new System.Drawing.Point(43, 36);
-            this.cmbAddresse.Name = "cmbAddresse";
-            this.cmbAddresse.Size = new System.Drawing.Size(455, 32);
-            this.cmbAddresse.TabIndex = 1;
-            this.cmbAddresse.SelectedIndexChanged += new System.EventHandler(this.cmbAddresse_SelectedIndexChanged);
-            this.cmbAddresse.MouseHover += new System.EventHandler(this.cmbAddresse_MouseHover);
+            this.cmbAssociation.AllowDrop = true;
+            this.cmbAssociation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.cmbAssociation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbAssociation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.cmbAssociation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.cmbAssociation.FormattingEnabled = true;
+            this.cmbAssociation.Location = new System.Drawing.Point(43, 36);
+            this.cmbAssociation.Name = "cmbAssociation";
+            this.cmbAssociation.Size = new System.Drawing.Size(455, 32);
+            this.cmbAssociation.TabIndex = 1;
+            this.cmbAssociation.SelectedIndexChanged += new System.EventHandler(this.cmbAssociation_SelectedIndexChanged);
             // 
             // pbRef
             // 
@@ -274,7 +188,7 @@
             this.pnlOption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.pnlOption.Controls.Add(this.btnSave);
             this.pnlOption.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlOption.Location = new System.Drawing.Point(288, 303);
+            this.pnlOption.Location = new System.Drawing.Point(292, 270);
             this.pnlOption.Name = "pnlOption";
             this.pnlOption.Size = new System.Drawing.Size(171, 101);
             this.pnlOption.TabIndex = 6;
@@ -297,13 +211,51 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // ucAttributionAdresseForm
+            // txtTaximan
+            // 
+            this.txtTaximan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTaximan.AutoSize = true;
+            this.txtTaximan.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtTaximan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtTaximan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.txtTaximan.Location = new System.Drawing.Point(477, 8);
+            this.txtTaximan.Name = "txtTaximan";
+            this.txtTaximan.Size = new System.Drawing.Size(0, 20);
+            this.txtTaximan.TabIndex = 11;
+            this.txtTaximan.TextChanged += new System.EventHandler(this.txtTaximan_TextChanged);
+            // 
+            // txtAssociation
+            // 
+            this.txtAssociation.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAssociation.AutoSize = true;
+            this.txtAssociation.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtAssociation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtAssociation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.txtAssociation.Location = new System.Drawing.Point(477, 8);
+            this.txtAssociation.Name = "txtAssociation";
+            this.txtAssociation.Size = new System.Drawing.Size(0, 20);
+            this.txtAssociation.TabIndex = 11;
+            // 
+            // txtId
+            // 
+            this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId.AutoSize = true;
+            this.txtId.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.txtId.Location = new System.Drawing.Point(599, 270);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(0, 20);
+            this.txtId.TabIndex = 11;
+            // 
+            // ucAdhesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlContainner);
-            this.Name = "ucAttributionAdresseForm";
+            this.Name = "ucAdhesion";
             this.Size = new System.Drawing.Size(762, 519);
+            this.Load += new System.EventHandler(this.ucAdhesion_Load);
             this.pnlContainner.ResumeLayout(false);
             this.pnlContainner.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -322,20 +274,17 @@
         private System.Windows.Forms.Panel pnlContainner;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblChoosePersonne;
-        private System.Windows.Forms.ComboBox cmbPersonne;
+        private System.Windows.Forms.ComboBox cmbTaximen;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel pnlChoose;
         private System.Windows.Forms.Label lblChooseAdresse;
-        private System.Windows.Forms.ComboBox cmbAddresse;
+        private System.Windows.Forms.ComboBox cmbAssociation;
         private System.Windows.Forms.PictureBox pbRef;
         private System.Windows.Forms.Panel pnlOption;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.RadioButton rdbTaximan;
-        private System.Windows.Forms.RadioButton rdbAgent;
-        private System.Windows.Forms.RadioButton rdbProprietaire;
-        private System.Windows.Forms.Label txtid;
-        private System.Windows.Forms.Label txtRef;
-        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Label txtId;
+        private System.Windows.Forms.Label txtTaximan;
+        private System.Windows.Forms.Label txtAssociation;
     }
 }

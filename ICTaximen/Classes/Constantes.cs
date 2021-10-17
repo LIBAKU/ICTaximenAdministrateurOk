@@ -13,6 +13,33 @@ namespace ICTaximen.Classes
            "code",
            "designation"          
       };
+        public static String[] AddressRefDBChamps = new String[]
+     {
+           "code",
+           "adresse",
+           "usersession"
+     };
+        
+
+        public static String[] AssociationDBChamps = new String[]
+     {
+            "code",
+           "designation",
+           "usersession"
+     };
+        public static String[] MyAddressRefDBChamps = new String[]
+     {
+           "code",
+           "numeromaison",
+           "reference",
+           "usersession"
+     };
+        public static String[] AgentFonctionDBChamps = new String[]
+      {
+           "code",
+           "fonction",
+            "usersession"
+      };
         public static String[] AutreAdresseDBChamps = new String[]
       {
            "code",
@@ -26,7 +53,10 @@ namespace ICTaximen.Classes
              "reference",
              "usersession"
      };
-        
+        public static String[] AdhesionDBChamps = new String[]
+    {
+        "code","association","taximan","datead","usersession"
+  };
         public static String[] TaximenDBChamps = new String[]
      {
             "code","nom","postnom","prenom","sexe","numeronational","lieunaissance","datenaissance","telephone","email","image","qrCode","username","userpassword","usersession"
@@ -53,6 +83,9 @@ namespace ICTaximen.Classes
             "dateaffectation",
             "usersession"
    };
-
+        public static String[] UserDBChamps = new String[]
+         {
+         "code","noms","niveau","username","userpassword","photo"
+         };
     }
 }

@@ -19,7 +19,7 @@ namespace ICTaximen.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -113,6 +113,16 @@ namespace ICTaximen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap association1_16 {
+            get {
+                object obj = ResourceManager.GetObject("association1_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap avenue_32 {
             get {
                 object obj = ResourceManager.GetObject("avenue_32", resourceCulture);
@@ -143,6 +153,16 @@ namespace ICTaximen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bd_64 {
+            get {
+                object obj = ResourceManager.GetObject("bd_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bike_64 {
             get {
                 object obj = ResourceManager.GetObject("Bike_64", resourceCulture);
@@ -166,6 +186,46 @@ namespace ICTaximen.Properties {
         internal static System.Drawing.Bitmap Close_Window_16 {
             get {
                 object obj = ResourceManager.GetObject("Close_Window_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cloud1_32 {
+            get {
+                object obj = ResourceManager.GetObject("cloud1_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cloud2_32 {
+            get {
+                object obj = ResourceManager.GetObject("cloud2_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cloud3_32 {
+            get {
+                object obj = ResourceManager.GetObject("cloud3_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cloude3_32 {
+            get {
+                object obj = ResourceManager.GetObject("cloude3_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,6 +453,36 @@ namespace ICTaximen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap new_16 {
+            get {
+                object obj = ResourceManager.GetObject("new_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_32 {
+            get {
+                object obj = ResourceManager.GetObject("new_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nivau_16 {
+            get {
+                object obj = ResourceManager.GetObject("nivau_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Nn_64 {
             get {
                 object obj = ResourceManager.GetObject("Nn_64", resourceCulture);
@@ -466,6 +556,16 @@ namespace ICTaximen.Properties {
         internal static System.Drawing.Bitmap Registration_32 {
             get {
                 object obj = ResourceManager.GetObject("Registration_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report_64 {
+            get {
+                object obj = ResourceManager.GetObject("report_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

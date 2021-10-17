@@ -216,5 +216,10 @@ namespace ICTaximen.userControls
             clsPhoto img = new clsPhoto();
             img.ImageImport1(picPhoto);
         }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            Refresh();
+        }
     }
 }

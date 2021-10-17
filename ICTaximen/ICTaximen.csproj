@@ -44,6 +44,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.CodeParser.v15.2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v15.2.Win, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Data.v15.2.dll</HintPath>
@@ -56,6 +58,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.DataAccess.v15.2.UI.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Map.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.Office.v15.2.Core.dll</HintPath>
@@ -108,6 +111,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraCharts.v15.2.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll</HintPath>
@@ -120,6 +124,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraGauges.v15.2.Core.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Presets, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Win, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraGrid.v15.2.dll</HintPath>
@@ -128,6 +134,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraLayout.v15.2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraMap.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraNavBar.v15.2.dll</HintPath>
@@ -152,6 +159,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraTreeList.v15.2.dll</HintPath>
@@ -160,8 +168,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Cours\MEMOIRE LIBAKU\MaleyProject\MonProjetMemoire\PaietransPubSoft\PaietransPubSoft\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.CData.MySQL, Version=21.0.0.40, Culture=neutral, PublicKeyToken=f57f3fbecba6b076" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -237,6 +250,12 @@
     <Compile Include="userControls\ucAjouterUtilisateurForm.Designer.cs">
       <DependentUpon>ucAjouterUtilisateurForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControls\ucAdhesion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucAdhesion.Designer.cs">
+      <DependentUpon>ucAdhesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="userControls\ucAssociation.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -291,6 +310,12 @@
     <Compile Include="userControls\ucFonctionForm.Designer.cs">
       <DependentUpon>ucFonctionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControls\ucMyadresse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucMyadresse.Designer.cs">
+      <DependentUpon>ucMyadresse.cs</DependentUpon>
+    </Compile>
     <Compile Include="userControls\ucParameters.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -308,6 +333,12 @@
     </Compile>
     <Compile Include="userControls\ucProprietaireForm.Designer.cs">
       <DependentUpon>ucProprietaireForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\ucReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ucReport.Designer.cs">
+      <DependentUpon>ucReport.cs</DependentUpon>
     </Compile>
     <Compile Include="userControls\ucSettings.cs">
       <SubType>UserControl</SubType>
@@ -368,6 +399,9 @@
     <EmbeddedResource Include="userControls\ucAjouterUtilisateurForm.resx">
       <DependentUpon>ucAjouterUtilisateurForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucAdhesion.resx">
+      <DependentUpon>ucAdhesion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucAssociation.resx">
       <DependentUpon>ucAssociation.cs</DependentUpon>
     </EmbeddedResource>
@@ -395,6 +429,9 @@
     <EmbeddedResource Include="userControls\ucFonctionForm.resx">
       <DependentUpon>ucFonctionForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucMyadresse.resx">
+      <DependentUpon>ucMyadresse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucParameters.resx">
       <DependentUpon>ucParameters.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucProprietaireForm.resx">
       <DependentUpon>ucProprietaireForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ucReport.resx">
+      <DependentUpon>ucReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\ucSettings.resx">
       <DependentUpon>ucSettings.cs</DependentUpon>
@@ -570,6 +610,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fonction_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\association1_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud1_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud3_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud2_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloude3_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bd_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nivau_16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

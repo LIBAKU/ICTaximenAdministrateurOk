@@ -57,13 +57,13 @@ namespace ICTaximen.userControls
 
         private void btnAssociation_Click(object sender, EventArgs e)
         {
-            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAssociation"))
+            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAdhesion"))
             {
-                ucAssociation un = new ucAssociation();
+                ucAdhesion un = new ucAdhesion();
                 un.Dock = DockStyle.Fill;
                 frmHome.Instance.PnlContainer.Controls.Add(un);
             }
-            frmHome.Instance.PnlContainer.Controls["ucAssociation"].BringToFront();
+            frmHome.Instance.PnlContainer.Controls["ucAdhesion"].BringToFront();
             frmHome.Instance.BackButton.Visible = true;
         }
         private void btnCategorieEngin_Click(object sender, EventArgs e)
@@ -78,5 +78,41 @@ namespace ICTaximen.userControls
             frmHome.Instance.BackButton.Visible = true;
         
     }
+
+        private void btnAssoociation_Click(object sender, EventArgs e)
+        {
+            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAssociation"))
+            {
+                ucAssociation un = new ucAssociation();
+                un.Dock = DockStyle.Fill;
+                frmHome.Instance.PnlContainer.Controls.Add(un);
+            }
+            frmHome.Instance.PnlContainer.Controls["ucAssociation"].BringToFront();
+            frmHome.Instance.BackButton.Visible = true;
+        }
+
+        private void btnAttribuer_Click(object sender, EventArgs e)
+        {
+            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucAttributionFonction"))
+            {
+                ucAttributionFonction un = new ucAttributionFonction();
+                un.Dock = DockStyle.Fill;
+                frmHome.Instance.PnlContainer.Controls.Add(un);
+            }
+            frmHome.Instance.PnlContainer.Controls["ucAttributionFonction"].BringToFront();
+            frmHome.Instance.BackButton.Visible = true;
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            if (!frmHome.Instance.PnlContainer.Controls.ContainsKey("ucReport"))
+            {
+                ucReport un = new ucReport();
+                un.Dock = DockStyle.Fill;
+                frmHome.Instance.PnlContainer.Controls.Add(un);
+            }
+            frmHome.Instance.PnlContainer.Controls["ucReport"].BringToFront();
+            frmHome.Instance.BackButton.Visible = true;
+        }
     }
 }

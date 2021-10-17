@@ -31,21 +31,23 @@
             this.pnlContainner = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblChoosePersonne = new System.Windows.Forms.Label();
-            this.cmbPersonne = new System.Windows.Forms.ComboBox();
+            this.cmbAgent = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlChoose = new System.Windows.Forms.Panel();
             this.lblChooseAdresse = new System.Windows.Forms.Label();
             this.cmbFonction = new System.Windows.Forms.ComboBox();
-            this.pnlOption = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbRef = new System.Windows.Forms.PictureBox();
+            this.pnlOption = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtAgent = new System.Windows.Forms.Label();
+            this.txtFoction = new System.Windows.Forms.Label();
             this.pnlContainner.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnlChoose.SuspendLayout();
-            this.pnlOption.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlChoose.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRef)).BeginInit();
+            this.pnlOption.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlContainner
@@ -67,14 +69,16 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.panel1.Controls.Add(this.txtAgent);
             this.panel1.Controls.Add(this.lblChoosePersonne);
-            this.panel1.Controls.Add(this.cmbPersonne);
+            this.panel1.Controls.Add(this.cmbAgent);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(122, 94);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(508, 77);
             this.panel1.TabIndex = 9;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lblChoosePersonne
             // 
@@ -85,22 +89,34 @@
             this.lblChoosePersonne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.lblChoosePersonne.Location = new System.Drawing.Point(11, 8);
             this.lblChoosePersonne.Name = "lblChoosePersonne";
-            this.lblChoosePersonne.Size = new System.Drawing.Size(163, 20);
+            this.lblChoosePersonne.Size = new System.Drawing.Size(135, 20);
             this.lblChoosePersonne.TabIndex = 9;
-            this.lblChoosePersonne.Text = "Chercher Personne";
+            this.lblChoosePersonne.Text = "Chercher Agent";
             // 
-            // cmbPersonne
+            // cmbAgent
             // 
-            this.cmbPersonne.AllowDrop = true;
-            this.cmbPersonne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.cmbPersonne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbPersonne.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.cmbPersonne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.cmbPersonne.FormattingEnabled = true;
-            this.cmbPersonne.Location = new System.Drawing.Point(43, 36);
-            this.cmbPersonne.Name = "cmbPersonne";
-            this.cmbPersonne.Size = new System.Drawing.Size(455, 32);
-            this.cmbPersonne.TabIndex = 1;
+            this.cmbAgent.AllowDrop = true;
+            this.cmbAgent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.cmbAgent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbAgent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.cmbAgent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.cmbAgent.FormattingEnabled = true;
+            this.cmbAgent.Location = new System.Drawing.Point(43, 36);
+            this.cmbAgent.Name = "cmbAgent";
+            this.cmbAgent.Size = new System.Drawing.Size(455, 32);
+            this.cmbAgent.TabIndex = 1;
+            this.cmbAgent.SelectedIndexChanged += new System.EventHandler(this.cmbAgent_SelectedIndexChanged);
+            this.cmbAgent.MouseHover += new System.EventHandler(this.cmbAgent_MouseHover);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ICTaximen.Properties.Resources.Name1;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // lblTitle
             // 
@@ -120,6 +136,7 @@
             // 
             this.pnlChoose.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlChoose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.pnlChoose.Controls.Add(this.txtFoction);
             this.pnlChoose.Controls.Add(this.lblChooseAdresse);
             this.pnlChoose.Controls.Add(this.cmbFonction);
             this.pnlChoose.Controls.Add(this.pbRef);
@@ -154,6 +171,18 @@
             this.cmbFonction.Name = "cmbFonction";
             this.cmbFonction.Size = new System.Drawing.Size(455, 32);
             this.cmbFonction.TabIndex = 1;
+            this.cmbFonction.SelectedIndexChanged += new System.EventHandler(this.cmbFonction_SelectedIndexChanged);
+            this.cmbFonction.MouseHover += new System.EventHandler(this.cmbFonction_MouseHover);
+            // 
+            // pbRef
+            // 
+            this.pbRef.Image = global::ICTaximen.Properties.Resources.fonction_16;
+            this.pbRef.Location = new System.Drawing.Point(13, 39);
+            this.pbRef.Name = "pbRef";
+            this.pbRef.Size = new System.Drawing.Size(24, 24);
+            this.pbRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRef.TabIndex = 0;
+            this.pbRef.TabStop = false;
             // 
             // pnlOption
             // 
@@ -165,26 +194,6 @@
             this.pnlOption.Name = "pnlOption";
             this.pnlOption.Size = new System.Drawing.Size(171, 101);
             this.pnlOption.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ICTaximen.Properties.Resources.Name1;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pbRef
-            // 
-            this.pbRef.Image = global::ICTaximen.Properties.Resources.fonction_16;
-            this.pbRef.Location = new System.Drawing.Point(13, 39);
-            this.pbRef.Name = "pbRef";
-            this.pbRef.Size = new System.Drawing.Size(24, 24);
-            this.pbRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRef.TabIndex = 0;
-            this.pbRef.TabStop = false;
             // 
             // btnSave
             // 
@@ -202,6 +211,31 @@
             this.btnSave.Text = "Enregistrer";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtAgent
+            // 
+            this.txtAgent.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAgent.AutoSize = true;
+            this.txtAgent.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtAgent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtAgent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.txtAgent.Location = new System.Drawing.Point(480, 8);
+            this.txtAgent.Name = "txtAgent";
+            this.txtAgent.Size = new System.Drawing.Size(0, 20);
+            this.txtAgent.TabIndex = 10;
+            // 
+            // txtFoction
+            // 
+            this.txtFoction.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtFoction.AutoSize = true;
+            this.txtFoction.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtFoction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtFoction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.txtFoction.Location = new System.Drawing.Point(480, 9);
+            this.txtFoction.Name = "txtFoction";
+            this.txtFoction.Size = new System.Drawing.Size(0, 20);
+            this.txtFoction.TabIndex = 10;
             // 
             // ucAttributionFonction
             // 
@@ -214,11 +248,11 @@
             this.pnlContainner.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlChoose.ResumeLayout(false);
             this.pnlChoose.PerformLayout();
-            this.pnlOption.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRef)).EndInit();
+            this.pnlOption.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -228,7 +262,7 @@
         private System.Windows.Forms.Panel pnlContainner;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblChoosePersonne;
-        private System.Windows.Forms.ComboBox cmbPersonne;
+        private System.Windows.Forms.ComboBox cmbAgent;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel pnlChoose;
@@ -237,5 +271,7 @@
         private System.Windows.Forms.PictureBox pbRef;
         private System.Windows.Forms.Panel pnlOption;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label txtAgent;
+        private System.Windows.Forms.Label txtFoction;
     }
 }

@@ -133,8 +133,17 @@
   <data name="Address_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Address_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="association1_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\association1_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avenue_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avenue_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="setigs_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setigs_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logout_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Birth" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Birth.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,8 +157,8 @@
   <data name="Address_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Address_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="20210201_163439" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20210201_163439.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="new_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hom_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hom_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +166,14 @@
   <data name="Logout_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logout_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cloude3_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cloude3_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Close_Window_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close_Window_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bd_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bd_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_QR_Code_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_QR_Code_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +202,14 @@
   <data name="user_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="save_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cloud3_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cloud3_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloud2_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cloud2_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Minus_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Minus_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +229,11 @@
   <data name="ville_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ville_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logout_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logout_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="new_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloud1_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cloud1_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Name1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Name1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,8 +241,8 @@
   <data name="Gender_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gender_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avenue_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avenue_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Return_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Return_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,6 +265,9 @@
   <data name="Home_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fonction_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fonction_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ba" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -256,7 +283,10 @@
   <data name="fonction_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fonction_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fonction_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fonction_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="20210201_163439" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20210201_163439.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nivau_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nivau_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
